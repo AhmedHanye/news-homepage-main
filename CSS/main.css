@@ -1,0 +1,122 @@
+/* ---- Variables ---- */
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+/* ---- Google Fonts ---- */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+/* ---- Global Rules ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-size: 0.9rem;
+}
+main {
+  width: 65rem !important;
+}
+nav > .container {
+  width: 67rem !important;
+}
+/* ---- Navigation ---- */
+.active,
+.nav-link:hover,
+a:hover {
+  color: var(--soft-red) !important;
+}
+.btn:hover {
+  background-color: var(--soft-red);
+}
+
+/* ---- Main ---- */
+
+.question {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.btn-read {
+  letter-spacing: 0.2rem;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.new {
+  color: var(--soft-orange);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.sub_section:not(:last-of-type) {
+  border-bottom: 0.08rem solid var(--white);
+}
+
+.sub_section > h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.CARD {
+  height: 6.3rem;
+  min-width: 19rem;
+}
+.card-body h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.card-body h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card-body p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .change-img > img:nth-child(1) {
+    display: none;
+  }
+  .change-img > img:nth-child(2) {
+    display: block !important;
+  }
+  main {
+    margin-bottom: 2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    width: 90vw !important;
+  }
+  nav > .container {
+    width: 90vw !important;
+  }
+  #offcanvasNavbar {
+    width: 80vw !important;
+  }
+}

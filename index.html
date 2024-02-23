@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- provides metadata i.e. name on tab in browser -->
+  <meta name="description" content="Frontend Mentor | News homepage">
+  <!-- provides metadata i.e. name on tab in browser -->
+  <meta name="author" content="Ahmed Hanye">
+  <!-- TODO: Don't forget to minimize the files after finish -->
+  <!-- Normalize CSS File -->
+  <link rel="stylesheet" href="./CSS/normalize_min.css">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container py-3">
+      <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Categories</a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Section 1 -->
+    <section class="row justify-content-between gap-4">
+      <div class="col-md-12 col-xl-8">
+        <div class="row">
+          <div class="col-12 p-0 change-img">
+            <img src="./assets/images/image-web-3-desktop.webp" class="img-fluid" alt="web 3">
+            <img src="./assets/images/image-web-3-mobile.webp" class="img-fluid d-none" alt="web 3">
+          </div>
+        </div>
+        <div class="row gap-4">
+          <div class="col-md col-sm-12 pt-4">
+            <h1 class="question pe-5">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="col-md col-sm-12 pt-4 d-flex flex-column align-items-baseline justify-content-between">
+            <p>We dive into the next evolution of the web that
+              claims to put the power of the platforms back into the hands of the people. But is it really fulfilling
+              its promise?</p>
+            <button type="button" class="btn btn-dark btn-read px-4 py-2 border-0">READ MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col bg-black px-4 pt-4" style="min-width: 300px;">
+        <div class="row pt-2">
+          <h2 class="new">New</h2>
+        </div>
+        <div class="row sub_section py-2">
+          <h3 class="text-white pt-3">Hydrogen VS Electric Cars</h3>
+          <p class="text-white-50 py-2">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="row sub_section py-2">
+          <h3 class="text-white pt-3">The Downsides of AI Artistry</h3>
+          <p class="text-white-50 py-2">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="row sub_section py-2">
+          <h3 class="text-white pt-3">Is VC Funding Drying Up?</h3>
+          <p class="text-white-50 py-2">Private funding by VC
+            firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 -->
+    <section class="row mt-5 gap-5">
+      <div class="d-flex flex-row col CARD">
+        <img src="./assets/images/image-retro-pcs.webp" class="card-img-left" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between ps-4">
+          <h4 class="text-black-50">01</h4>
+          <a href="#" class="text-black d-block text-decoration-none">
+            <h5>Reviving Retro PCs</h5>
+          </a>
+          <p class="text-dark-emphasis mb-0">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="d-flex flex-row col CARD">
+        <img src="./assets/images/image-top-laptops.webp" class="card-img-left" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between ps-4">
+          <h4 class="text-black-50">02</h4>
+          <a href="#" class="text-black d-block text-decoration-none">
+
+            <h5>Top 10 Laptops of 2022</h5>
+          </a>
+          <p class="text-dark-emphasis mb-0">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-row col CARD ">
+        <img src="./assets/images/image-gaming-growth.webp" class="card-img-left" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between ps-4">
+          <h4 class="text-black-50">03</h4>
+          <a href="#" class="text-black d-block text-decoration-none">
+            <h5>The Growth of Gaming</h5>
+          </a>
+          <p class="text-dark-emphasis mb-0">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS File -->
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
