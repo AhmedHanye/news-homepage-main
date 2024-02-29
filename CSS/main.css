@@ -40,13 +40,10 @@ body {
 p {
   font-size: 0.9rem;
 }
-main {
-  width: 65rem !important;
-}
+/* ---- Navigation ---- */
 nav > .container {
   width: 67rem !important;
 }
-/* ---- Navigation ---- */
 .active,
 .nav-link:hover,
 a:hover {
@@ -57,7 +54,9 @@ a:hover {
 }
 
 /* ---- Main ---- */
-
+main {
+  width: 65rem !important;
+}
 .question {
   font-weight: 800;
   font-size: 2.5rem;
@@ -98,15 +97,18 @@ a:hover {
   font-size: 0.8rem;
 }
 
+/* ---- Media Queries ---- */
+@media (max-width: 1200px) {
+  main {
+    margin-bottom: 2rem !important;
+  }
+}
 @media (max-width: 768px) {
   .change-img > img:nth-child(1) {
     display: none;
   }
   .change-img > img:nth-child(2) {
     display: block !important;
-  }
-  main {
-    margin-bottom: 2rem !important;
   }
 }
 @media (max-width: 576px) {
